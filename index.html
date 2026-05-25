@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noir Rouge Club | Luxury Nightclub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="noise"></div>
+    <div class="cursor-light"></div>
+    <header class="nav-glass fixed top-0 left-0 right-0 z-50">
+        <div class="mx-auto max-w-7xl px-6 h-20 flex items-center justify-between"><a href="index.html"
+                class="font-display text-2xl md:text-3xl tracking-[.22em]">NOIR <span
+                    class="text-red-600">ROUGE</span></a>
+            <nav class="hidden md:flex items-center gap-9"><a class="lux-link active" href="index.html">Home</a><a
+                    class="lux-link" href="events.html">Events</a><a class="lux-link"
+                    href="reservations.html">Reservations</a></nav>
+            <div class="flex items-center gap-3"><a href="reservations.html"
+                    class="btn-red px-5 md:px-6 py-3 text-[10px] md:text-xs font-black uppercase tracking-[.18em]">Book
+                    VIP</a><button data-menu-btn class="md:hidden btn-line px-4 py-3 text-xs">Menu</button></div>
+        </div>
+        <div class="mobile-menu md:hidden flex-col bg-black/95 border-t border-white/10 px-6 py-5 gap-4"><a
+                href="index.html">Home</a><a href="events.html">Events</a><a href="reservations.html">Reservations</a>
+        </div>
+    </header>
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden thin-grid"><video
+            id="heroVideo" class="absolute inset-0 w-full h-full object-cover opacity-80" autoplay muted loop
+            playsinline preload="auto"
+            poster="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1800&q=85">
+            <source src="assets/video/night.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 video-overlay"></div>
+        <div class="hero-orbit hidden lg:block"></div><button data-sound class="sound-toggle">Enable Sound</button>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center pt-24">
+            <p class="reveal text-red-500 uppercase tracking-[.55em] text-xs font-black mb-7">Private Club • Red Room •
+                Elite Nights</p>
+            <!-- <h1
+                class="reveal hero-title font-display text-[88px] md:text-[132px] lg:text-[158px] leading-[.78] font-black">
+                The Night<br><span class="text-gradient">Looks Expensive</span></h1> -->
+            <!-- <p class="reveal max-w-3xl mx-auto mt-9 text-lg md:text-xl text-white/76 leading-8">A cinematic black and
+                red nightclub experience with continuous motion, VIP table reservations, high-ticket packages, private
+                lounges and luxury event energy.</p> -->
+            <div class="reveal mt-11 flex flex-wrap justify-center gap-4"><a href="reservations.html"
+                    class="btn-red px-9 py-4 text-xs font-black uppercase tracking-[.18em]">Reserve A Table</a><a
+                    href="events.html" class="btn-line px-9 py-4 text-xs font-black uppercase tracking-[.18em]">Explore
+                    Events</a></div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/45 animate-bounce">↓</div>
+    </section>
+    <div class="marquee"><span>VIP TABLES <b>•</b> LIVE DJS <b>•</b> BOTTLE SERVICE <b>•</b> PRIVATE LOUNGES <b>•</b>
+            RED ROOM <b>•</b></span><span>VIP TABLES <b>•</b> LIVE DJS <b>•</b> BOTTLE SERVICE <b>•</b> PRIVATE LOUNGES
+            <b>•</b> RED ROOM <b>•</b></span></div>
+    <section class="py-28 split-red">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center reveal">
+                <p class="text-red-500 uppercase tracking-[.4em] text-xs font-bold">Curated for status</p>
+                <h2 class="section-title font-display text-5xl md:text-7xl mt-4">Million Dollar Nightlife</h2>
+                <p class="text-white/55 mt-5 max-w-2xl mx-auto leading-7">Premium sections that make the website feel
+                    exclusive, expensive and conversion-focused.</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-5 mt-16 stagger">
+                <div class="lux-card p-7"><span class="text-red-500 text-4xl font-display">01</span>
+                    <h3 class="font-display text-2xl mt-8">Cinematic Video</h3>
+                    <p class="text-white/60 mt-4 leading-7">Continuous hero video with red overlays and a
+                        user-controlled sound button.</p>
+                </div>
+                <div class="lux-card p-7"><span class="text-red-500 text-4xl font-display">02</span>
+                    <h3 class="font-display text-2xl mt-8">VIP Booking</h3>
+                    <p class="text-white/60 mt-4 leading-7">Smooth package selection, date, guests, budget and concierge
+                        notes.</p>
+                </div>
+                <div class="lux-card p-7"><span class="text-red-500 text-4xl font-display">03</span>
+                    <h3 class="font-display text-2xl mt-8">Event Upsells</h3>
+                    <p class="text-white/60 mt-4 leading-7">Cards built to sell tickets, lounges, tables and private
+                        experiences.</p>
+                </div>
+                <div class="lux-card p-7"><span class="text-red-500 text-4xl font-display">04</span>
+                    <h3 class="font-display text-2xl mt-8">Luxury Motion</h3>
+                    <p class="text-white/60 mt-4 leading-7">Scroll reveals, hover effects, parallax depth and premium
+                        transitions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-[#070203]">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="image-frame reveal parallax" data-speed="-.025"><img
+                    src="https://images.unsplash.com/photo-1571266028243-d220c6a7edbf?auto=format&fit=crop&w=1300&q=85"
+                    class="w-full h-[660px] object-cover" alt="Nightclub lounge"></div>
+            <div class="reveal">
+                <p class="text-red-500 uppercase tracking-[.4em] text-xs font-bold">Signature Room</p>
+                <h2 class="font-display text-5xl md:text-7xl mt-5 leading-tight">The Crimson Vault</h2>
+                <p class="text-white/65 leading-8 mt-6">A private room concept for celebrity nights, product launches,
+                    executive parties, DJ performances and invite-only experiences.</p>
+                <div class="grid sm:grid-cols-2 gap-4 mt-8">
+                    <div class="lux-card p-5"><b>360° LED Scene</b>
+                        <p class="text-white/50 text-sm mt-2">Immersive lighting tunnel</p>
+                    </div>
+                    <div class="lux-card p-5"><b>Private Hosts</b>
+                        <p class="text-white/50 text-sm mt-2">VIP concierge service</p>
+                    </div>
+                    <div class="lux-card p-5"><b>Table Mapping</b>
+                        <p class="text-white/50 text-sm mt-2">Smart package selection</p>
+                    </div>
+                    <div class="lux-card p-5"><b>Artist Nights</b>
+                        <p class="text-white/50 text-sm mt-2">DJ and live performance</p>
+                    </div>
+                </div><a href="reservations.html"
+                    class="btn-red mt-9 px-8 py-4 text-xs font-black uppercase tracking-[.18em]">Enter VIP</a>
+            </div>
+        </div>
+    </section>
+    <section class="py-28">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-[.9fr_1.1fr] gap-8 items-end">
+                <div class="reveal">
+                    <p class="text-red-500 uppercase tracking-[.4em] text-xs font-bold">Featured Experience</p>
+                    <h2 class="font-display text-5xl md:text-7xl mt-4">Red Carpet Events</h2>
+                </div>
+                <p class="reveal text-white/60 leading-8 max-w-2xl">High-impact event cards built for premium ticketing,
+                    guest list capture and private package upgrades.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 mt-14 stagger">
+                <div class="image-frame"><img
+                        src="https://images.unsplash.com/photo-1574391884720-bbc3740c59d1?auto=format&fit=crop&w=900&q=85"
+                        class="h-80 w-full object-cover" alt="DJ night">
+                    <div class="p-6">
+                        <p class="text-red-500 text-xs font-bold">FRI • 10 PM</p>
+                        <h3 class="font-display text-3xl mt-2">Blood Moon</h3>
+                        <p class="text-white/55 mt-3 text-sm">Dark house, red lasers and premium tables.</p>
+                    </div>
+                </div>
+                <div class="image-frame"><img
+                        src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?auto=format&fit=crop&w=900&q=85"
+                        class="h-80 w-full object-cover" alt="Concert">
+                    <div class="p-6">
+                        <p class="text-red-500 text-xs font-bold">SAT • 11 PM</p>
+                        <h3 class="font-display text-3xl mt-2">Neon Ritual</h3>
+                        <p class="text-white/55 mt-3 text-sm">Headline DJ, VIP mezzanine and bottle service.</p>
+                    </div>
+                </div>
+                <div class="image-frame"><img
+                        src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=900&q=85"
+                        class="h-80 w-full object-cover" alt="Party">
+                    <div class="p-6">
+                        <p class="text-red-500 text-xs font-bold">SUN • PRIVATE</p>
+                        <h3 class="font-display text-3xl mt-2">Velvet Afterdark</h3>
+                        <p class="text-white/55 mt-3 text-sm">Members-only lounge and private host access.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-[#080203]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center reveal">
+                <p class="text-red-500 uppercase tracking-[.4em] text-xs font-bold">Visual Energy</p>
+                <h2 class="font-display text-5xl md:text-7xl mt-4">Afterdark Gallery</h2>
+            </div>
+            <div class="gallery-strip mt-14 reveal"><img
+                    src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=700&q=85"><img
+                    src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=700&q=85"><img
+                    src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=700&q=85"><img
+                    src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=700&q=85"><img
+                    src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=700&q=85"><img
+                    src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=700&q=85">
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#030303] border-t border-white/10 py-14">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+            <div>
+                <h3 class="font-display text-3xl tracking-[.2em]">NOIR <span class="text-red-600">ROUGE</span></h3>
+                <p class="text-sm text-white/55 mt-4">Premium black and red nightlife concept for elite events and
+                    private experiences.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Explore</h4>
+                <p class="text-white/55 text-sm leading-8">Events<br>VIP Tables<br>Private Hire<br>Gallery</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Hours</h4>
+                <p class="text-white/55 text-sm leading-8">Thu: 9PM - 3AM<br>Fri-Sat: 9PM - 5AM<br>Sun: Private only</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Inner Circle</h4>
+                <div class="flex border-b border-white/20"><input
+                        class="bg-transparent outline-none py-3 flex-1 text-sm" placeholder="Email address"><button
+                        class="text-red-500 font-bold">→</button></div>
+            </div>
+        </div>
+        <p class="text-center text-white/35 text-xs tracking-[.2em] mt-12">© 2026 NOIR ROUGE. ALL RIGHTS RESERVED.</p>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
