@@ -422,3 +422,22 @@ video {
         display: flex
     }
 }
+
+/* Header logo fix */
+header a img {
+    display: block;
+}
+
+/* Hero video crop fix */
+.hero-video {
+    object-fit: cover;
+    object-position: center top;
+    padding-top: 80px;
+}
+
+/* Better mobile video position */
+@media (max-width: 768px) {
+    .hero-video {
+        object-position: center top;
+    }
+}
