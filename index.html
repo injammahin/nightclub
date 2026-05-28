@@ -53,7 +53,7 @@
             <source src="assets/video/night.mp4" type="video/mp4">
         </video>
         <div class="absolute inset-0 video-overlay"></div>
-        <div class="hero-orbit hidden lg:block"></div>
+        <!-- <div class="hero-orbit hidden lg:block"></div> -->
 
         <div class="hero-action-stack">
             <a href="tel:+19548820864" class="call-now-box">
@@ -272,6 +272,17 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script>
+        const heroVideo = document.getElementById('heroVideo');
+
+        if (heroVideo) {
+            heroVideo.addEventListener('timeupdate', () => {
+                if (heroVideo.currentTime >= 20) {
+                    heroVideo.classList.add('focus-girl');
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

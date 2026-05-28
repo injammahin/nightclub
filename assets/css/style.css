@@ -608,3 +608,25 @@ textarea {
         font-size: 52px !important;
     }
 }
+
+/* Mobile hero video focus fix */
+/* Mobile video starts normal */
+@media (max-width: 768px) {
+    .hero-video {
+        padding-top: 0;
+        object-fit: cover;
+        object-position: center top;
+        transition: object-position 1.2s ease;
+    }
+
+    /* After 10 seconds, focus right side/girl area */
+    .hero-video.focus-girl {
+        object-position: 70% center;
+    }
+}
+
+@media (max-width: 430px) {
+    .hero-video.focus-girl {
+        object-position: 74% center;
+    }
+}
