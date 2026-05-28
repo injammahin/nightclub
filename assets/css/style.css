@@ -610,7 +610,6 @@ textarea {
 }
 
 /* Mobile hero video focus fix */
-/* Mobile video starts normal */
 @media (max-width: 768px) {
     .hero-video {
         padding-top: 0;
@@ -619,7 +618,6 @@ textarea {
         transition: object-position 1.2s ease;
     }
 
-    /* After 10 seconds, focus right side/girl area */
     .hero-video.focus-girl {
         object-position: 70% center;
     }

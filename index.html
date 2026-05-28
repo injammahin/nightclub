@@ -76,7 +76,7 @@
                 food, great music, dancing and four exclusive VIP sections for birthdays, celebrations and special
                 nights out.
             </p>
-            <div class="reveal mt-11 flex flex-wrap justify-center gap-4">
+            <div class="reveal mt-11 mb-12 flex flex-wrap justify-center gap-4">
                 <a href="reservations.html"
                     class="btn-red px-9 py-4 text-xs font-black uppercase tracking-[.18em]">Reserve VIP Section</a>
                 <a href="events.html" class="btn-line px-9 py-4 text-xs font-black uppercase tracking-[.18em]">View
@@ -273,15 +273,44 @@
 
     <script src="assets/js/main.js"></script>
     <script>
-        const heroVideo = document.getElementById('heroVideo');
+        (() => {
+            const heroVideo = document.getElementById('heroVideo');
 
-        if (heroVideo) {
+            if (!heroVideo) return;
+
+            const focusAfterSeconds = 20;
+            let lastTime = 0;
+
+            function resetVideoFocus() {
+                heroVideo.classList.remove('focus-girl');
+            }
+
+            function applyVideoFocus() {
+                heroVideo.classList.add('focus-girl');
+            }
+
             heroVideo.addEventListener('timeupdate', () => {
-                if (heroVideo.currentTime >= 20) {
-                    heroVideo.classList.add('focus-girl');
+                const currentTime = heroVideo.currentTime;
+
+                // Detect video loop/restart
+                if (currentTime < lastTime) {
+                    resetVideoFocus();
+                }
+
+                // Apply focus after 20 seconds in every loop
+                if (currentTime >= focusAfterSeconds) {
+                    applyVideoFocus();
+                }
+
+                lastTime = currentTime;
+            });
+
+            heroVideo.addEventListener('play', () => {
+                if (heroVideo.currentTime < focusAfterSeconds) {
+                    resetVideoFocus();
                 }
             });
-        }
+        })();
     </script>
 </body>
 
